@@ -1,0 +1,25 @@
+.header {
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	z-index: 1000;
+	background: transparent;
+	.padding(30,80,0,80);
+	@media @tablet, @mobile {
+		.padding(30,50,0,50);
+	}
+	@media @mobile {
+		.padding(20,20,0,20);
+	}
+	&__logo {
+		display: block;
+		.width(272);
+		height: auto;
+		flex-shrink: 0;
+		@media @tablet, @mobile {
+			.width(200);
+          margin:  auto;
+		}
+	}
+}

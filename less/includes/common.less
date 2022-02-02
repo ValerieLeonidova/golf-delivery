@@ -1,0 +1,142 @@
+.row:before, .row:after {display: none !important;}
+* {
+	margin:0;
+	padding: 0;
+}
+html,
+body {
+	color: @text;
+	min-height: 100vh;
+	background: @white;
+	.Montserrat;
+	line-height: 1.1;
+	@media (min-width:1441px) {
+		font-size: 16px;
+	}
+	@media (max-width:1440px) {
+		font-size: 14px;
+	}
+	@media (max-width:1366px) {
+		font-size: 13px;
+	}
+	@media (max-width:1280px) {
+		font-size: 12px;
+	}
+	@media (max-width:1024px) {
+		font-size: 13px;
+	}
+}
+img {
+	vertical-align: top;
+}
+a {
+	color: @primary;
+	text-decoration: none;
+	&:hover {
+		color: @primary;
+		text-decoration: underline;
+	}
+}
+.overlay {
+	padding-top: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 10;
+	display:none;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 100;
+	}
+	&.show {
+		display: block;
+	}
+}
+.no-scroll {
+	@media @mobile {
+		position: fixed;
+		width:100%;
+		height: 100%;
+		overflow: hidden;
+	}
+}
+.container {
+	max-width: 74.375rem;
+	&_lg {
+		max-width: 83.375rem;
+	}
+}
+.btn {
+	.inline-b;
+	.line-height(50);
+	background: @primary;
+	color:@white;
+	.font-size(16);
+	.Montserrat;
+	font-weight: 700;
+	border: 0;
+	cursor: pointer;
+	border-radius: 1.563rem;
+	.padding(0,30,0,30);
+	.transition(all 0.1s ease);
+	outline: 0;
+	white-space: nowrap;
+	&:hover {
+		border-color:@primary;
+		background: fade(@primary, 90%);
+		color:@white;
+		text-decoration: none;
+	}
+	&:focus {
+		box-shadow:none;
+		color:@white;
+	}
+	&.btn-transparent {
+		background: none;
+		color:@primary;
+	}
+	&.btn-black {
+		background: @black;
+		border-color:@black;
+		&:hover {
+			background: fade(@black, 80%);
+		}
+	}
+	&.btn-outline-black {
+		background: none;
+		color:@black;
+		border-color:@black;
+		&:hover {
+			background: fade(@black, 10%);
+		}
+	}
+	&.btn-outline-white {
+		background: none;
+		color:@white;
+		border-color:@white;
+		&:hover {
+			background: fade(@white, 10%);
+		}
+	}
+}
+
+
+@media @tablet-portrait, @mobile {
+	//.wow {
+	//	visibility: visible !important;
+	//	-webkit-animation: none !important;
+	//	-moz-animation: none !important;
+	//	-o-animation: none !important;
+	//	-ms-animation: none !important;
+	//	animation: none !important;
+	//}
+}

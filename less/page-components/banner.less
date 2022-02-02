@@ -1,0 +1,177 @@
+@import "cloud-animation";
+.banner {
+  height: ~"calc(100vh + 3.5rem)";
+  position: relative;
+  overflow: hidden;
+  background: url(../img/banner-bg.png) no-repeat 50% 50%;
+  background-size: cover;
+  @media @tablet, @mobile {
+    background: url(../img/banner-bg-mob.png) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  @media @tablet-portrait, @mobile {
+    height: 66rem;
+  }
+  @media @mobile {
+    height: 46rem;
+  }
+  @media @mobile-xs {
+    height: 100vh;
+    min-height: 56rem;
+  }
+  &__text {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:@white;
+    text-shadow:0 2px 8px rgba(0,0,0,0.16);
+    .padding(70,0,0,0);
+    @media @tablet, @mobile {
+      align-items: flex-end;
+      padding: 0 0 5rem;
+      .text-center;
+    }
+    @media @mobile {
+      padding: 0 0 3rem;
+    }
+    @media @mobile-xs {
+      padding: 0 0 3rem;
+    }
+  }
+  .container {
+    z-index: 3;
+  }
+  &__text-inner {
+    width:60%;
+    @media @tablet, @mobile {
+      width:45%;
+      margin: 0 auto;
+    }
+    @media @mobile {
+      width:100%;
+    }
+  }
+  &__ttl {
+    display: block;
+    font-weight: 600;
+    .font-size(50);
+    .line-height(60);
+    .margin(0,0,15,0);
+    @media @tablet, @mobile {
+      .font-size(36);
+      .line-height(46);
+      .margin(0,0,10,0);
+    }
+  }
+  &__txt {
+    display: block;
+    .font-size(20);
+    .line-height(32);
+    .margin(0,0,50,0);
+    @media @tablet, @mobile {
+      .font-size(18);
+      .line-height(28);
+      .margin(0,0,30,0);
+    }
+  }
+  &__app-link {
+    .inline-b;
+    .width(197);
+    .margin(0,32,0,0);
+    @media @tablet, @mobile {
+      width:10rem;
+      margin: 0 1rem;
+    }
+    img {
+      width:100%;
+      height: auto;
+      transition: all 0.1s ease;
+    }
+    &:hover {
+      img {
+        opacity: .8;
+      }
+    }
+  }
+  p {
+    margin: 0;
+  }
+  &__sky {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    background: url(../img/banner-sky.png) repeat-x;
+    background-size: auto 100%;
+    .height(190);
+
+  }
+  &__wave {
+    position: absolute;
+    left:0;
+    bottom:-1px;
+    width:100%;
+    height: auto;
+    z-index: 4;
+  }
+  &__cloud_1 {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    //.height(159);
+    background: url(../img/banner-cloud-1.png) no-repeat;
+    //background-size: auto 100%;
+    background-size: cover;
+    animation: cloud-1 900s infinite linear;
+  }
+  &__cloud_2 {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    //.height(159);
+    background: url(../img/banner-cloud-2.png) no-repeat;
+    //background-size: auto 100%;
+    background-size: cover;
+    animation: cloud-1 700s infinite linear;
+  }
+  #banner{
+    z-index: 2;
+    .full;
+    .banner-car {
+      width: 100%;
+      height: 100%;
+      background: url(../img/banner-car.png) no-repeat 50% 50%;
+      background-size: cover;
+    }
+    .banner-man {
+      width: 100%;
+      height: 100%;
+      background: url(../img/banner-man.png) no-repeat 50% 50%;
+      background-size: cover;
+    }
+    .banner-food-1 {
+      width: 100%;
+      height: 100%;
+      background: url(../img/banner-food-1.png) no-repeat 50% 50%;
+      background-size: cover;
+    }
+    .banner-food-2 {
+      width: 100%;
+      height: 100%;
+      background: url(../img/banner-food-2.png) no-repeat 50% 50%;
+      background-size: cover;
+    }
+    .banner-food-3 {
+      width: 100%;
+      height: 100%;
+      background: url(../img/banner-food-3.png) no-repeat 50% 50%;
+      background-size: cover;
+    }
+  }
+}

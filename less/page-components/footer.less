@@ -1,0 +1,129 @@
+.footer {
+  .padding(180,0,50,0);
+  color:@white;
+  background:#0a9745 url(../img/footer-bg.png) repeat-x;
+  background-size: 100% auto;
+  overflow: hidden;
+  @media @tablet {
+    padding-top: 7rem;
+  }
+  @media @mobile {
+    padding: 5rem 0 2rem;
+  }
+  @media @mobile-xs {
+    padding: 4rem 0 2rem;
+  }
+  &__text {
+    .text-center;
+    .font-size(18);
+    .line-height(32);
+    .padding(0,0,40,0);
+    text-shadow:0 2px 8px rgba(0,0,0,0.16);
+    @media @mobile {
+      padding-bottom: 1.5rem;
+    }
+    h5 {
+      display: block;
+      font-weight: 700;
+      .font-size(50);
+      .line-height(60);
+      .margin(0,0,30,0);
+      @media @tablet, @mobile {
+        .font-size(32);
+        .line-height(42);
+        .margin(0,0,15,0);
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media @mobile-xs {
+      padding-bottom: 2.5rem;
+    }
+  }
+  &__app-link {
+    .inline-b;
+    .width(197);
+    .margin(0,15,0,15);
+    @media @tablet, @mobile {
+      width:10rem;
+      margin: 0 1rem;
+    }
+    img {
+      width:100%;
+      height: auto;
+      transition: all 0.1s ease;
+    }
+    &:hover {
+      img {
+        opacity: .8;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .padding(0,80,0,80);
+    @media @mobile {
+      padding: 0 2rem;
+    }
+    @media @mobile-xs {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &_right {
+      flex-shrink: 0;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .margin(0,0,32,0);
+    @media @mobile-xs {
+      justify-content: center;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .width(40);
+      .height(40);
+      border-radius: 50%;
+      color:@white;
+      .margin(0,0,0,13);
+      border:1px solid @white;
+      @media @mobile-xs {
+        margin: 0 0.5rem;
+      }
+      &:hover {
+        text-decoration: none;
+        color:@primary;
+        border-color:@primary;
+      }
+      i {
+        .font-size(18.29);
+      }
+    }
+  }
+  &__logo {
+    .width(275);
+    height: auto;
+    @media @tablet-portrait, @mobile-xs {
+      width:13rem;
+    }
+    @media @mobile-xs {
+      margin-bottom: 2rem;
+    }
+  }
+  &__copy {
+    display: block;
+    .font-size(13);
+    .text-right;
+  }
+}
+

@@ -1,0 +1,99 @@
+@import "cloud-animation";
+.how-works {
+  .padding(70,0,70,0);
+  position: relative;
+  overflow: hidden;
+  .font-size(16);
+  .line-height(32);
+  color:@text;
+  @media @mobile {
+    padding: 3rem 0 0 0;
+  }
+  .container {
+    z-index: 100;
+  }
+  &__text {
+    .padding(0,0,60,0);
+    @media @mobile-xs {
+      width:100%;
+      .padding(0,0,16rem,0);
+    }
+  }
+  h2 {
+    display: block;
+    font-weight: 700;
+    .font-size(40);
+    .line-height(50);
+    .margin(0,0,20,0);
+    color:@title;
+    @media @tablet, @mobile {
+      .font-size(34);
+      .line-height(44);
+      .margin(0,0,15,0);
+    }
+  }
+  h3 {
+    display: block;
+    font-weight: 700;
+    .font-size(22);
+    .line-height(32);
+    .margin(0,0,15,0);
+    color:@title;
+    @media @mobile-xs {
+      .font-size(18);
+      .line-height(28);
+      .margin(0,0,10,0);
+    }
+  }
+  &__cloud {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background: url(../img/works-cloud.png) repeat-x;
+    background-size: 100% auto;
+    animation: cloud-2 50s infinite linear;
+    z-index: 1;
+    @media @tablet, @mobile {
+      animation: none;
+    }
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    @media @mobile-xs {
+      flex-wrap: wrap;
+    }
+    li {
+      width:25%;
+      position: relative;
+      @media @tablet-portrait, @mobile {
+        width:30%;
+      }
+      @media @mobile-xs {
+        width:100%;
+        .padding(0,0,16,0);
+      }
+      .arrow {
+        .width(219);
+        height: auto;
+        position: absolute;
+        .top(38);
+        .left(120);
+      }
+      .icon {
+        display: block;
+        .height(85);
+        width:auto;
+        .margin(0,0,32,0);
+        @media @mobile-xs {
+          height: 4rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

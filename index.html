@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Golf Delivery Landing Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/parallax.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <img src="./img/logo.png" alt="" class="header__logo wow fadeInRight" data-wow-duration="2.0s">
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <div class="banner__text">
+                <div class="container container_lg">
+                    <div class="banner__text-inner">
+                        <h1 class="banner__ttl wow fadeInDown" data-wow-duration="2.0s">Are you tired of crackers and peanuts at the golf course? </h1>
+                        <div class="banner__txt wow fadeInUp" data-wow-duration="2.0s">Our app will make you feel like you have a personal concierge. From ordering a martini, margarita, breakfast sandwich, burger, golf accessories like tees, balls, hats etc... We bring the clubhouse directly to you. </div>
+                        <a href="#" class="banner__app-link wow fadeInLeft" data-wow-duration="2.0s"><img src="./img/svg/appstore_black.svg" alt=""/></a>
+                        <a href="#" class="banner__app-link wow fadeInRight" data-wow-duration="2.0s"><img src="./img/svg/download_btn_google_play.svg" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__sky d-none d-xl-block"></div>
+            <div class="banner__cloud_1 d-none d-xl-block"></div>
+            <div class="banner__cloud_2 d-none d-xl-block"></div>
+            <img src="./img/wave.png" alt="" class="banner__wave">
+            <div id="banner" class="d-none d-xl-block">
+                <div class="banner-car" data-depth="-0.03"></div>
+                <div class="banner-man" data-depth="-0.03"></div>
+                <div class="banner-food-1" data-depth="0.06"></div>
+                <div class="banner-food-2" data-depth="0.09"></div>
+                <div class="banner-food-3" data-depth="0.03"></div>
+            </div>
+        </section>
+
+        <script>
+
+            var firstScene = document.getElementById('banner');
+            var firstParallax = new Parallax(firstScene);
+
+        </script>
+
+        <section class="about">
+            <div class="about__text">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-xl-end">
+                        <div class="col-md-6">
+                            <div class="about__text-inner">
+                                <h2 class="wow fadeInDown" data-wow-duration="2.0s">Are you tired of crackers and peanuts at the golf course?</h2>
+                                <div class="wow fadeInRight" data-wow-duration="2.0s">
+                                    <p>Would you like a specific beer / cocktail or soda pop, that’s offered in the clubhouse yet not in the cart ? <br/> Are you thirsty or hungry yet the cart girl seems to only come around every 4 holes?</p>
+                                    <p>Did you lose a club and need help finding it ? <br/> Did you lose all your golf balls  and you still have 13 holes left ? </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__cloud"></div>
+            <img src="./img/wave.png" alt="" class="about__wave">
+            <div id="about" class="d-none d-xl-block">
+                <div class="about__food about__food_1" data-depth="-0.01"></div>
+                <div class="about__food about__food_2" data-depth="0.03"></div>
+                <div class="about__food about__food_3" data-depth="0.06"></div>
+                <div class="about__food about__food_4" data-depth="0.09"></div>
+            </div>
+        </section>
+
+        <script>
+
+            var firstScene = document.getElementById('about');
+            var firstParallax = new Parallax(firstScene);
+
+        </script>
+
+        <section class="how-works">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="how-works__text wow fadeInDown" data-wow-duration="2.0s">
+                            <h2>How it works </h2>
+                            <p>How it works could be best explained by you to make sound simple and immediate.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="how-works__list">
+                            <li class="wow fadeInRightBig" data-wow-duration="2.0s">
+                                <img src="./img/svg/map2.svg" alt="" class="icon"/>
+                                <img src="./img/arrow.png" alt="" class="arrow d-none d-lg-block wow bounceInDown" data-wow-duration="2.0s" data-wow-delay="1.2s"/>
+                                <h3>Find your Golf Courses</h3>
+                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </li>
+                            <li class="wow fadeInRightBig" data-wow-duration="2.0s" data-wow-delay="0.3s">
+                                <img src="./img/svg/fast-food-5.svg" alt="" class="icon"/>
+                                <img src="./img/arrow.png" alt="" class="arrow d-none d-lg-block wow bounceInDown" data-wow-duration="2.0s" data-wow-delay="1.2s"/>
+                                <h3>Discover Menu</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </li>
+                            <li class="wow fadeInRightBig" data-wow-duration="2.0s" data-wow-delay="0.6s">
+                                <img src="./img/svg/golf-course.svg" alt="" class="icon"/>
+                                <h3>Enjoy food and playing!</h3>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="how-works__cloud"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">
+                <h5 class="wow fadeInDown" data-wow-duration="2.0s">Are you tired of crackers and peanuts at the golf course?</h5>
+                <div class="wow fadeInUp" data-wow-duration="2.0s">
+                    <p>Our app will make you feel like you have a personal concierge. From ordering a martini, margarita, breakfast sandwich, burger, golf accessories like tees, balls, hats etc... We bring the clubhouse directly to you. </p>
+                </div>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__app-link wow fadeInLeft" data-wow-duration="2.0s"><img src="./img/svg/appstore_black.svg" alt=""/></a>
+                <a href="#" class="footer__app-link wow fadeInRight" data-wow-duration="2.0s"><img src="./img/svg/download_btn_google_play.svg" alt=""/></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <img src="./img/logo.png" alt="" class="footer__logo wow fadeInLeft" data-wow-duration="2.0s"/>
+            <div class="footer__bottom_right wow fadeInRight" data-wow-duration="2.0s">
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <span class="footer__copy">© 200 Stay Delivered. All Rights Reserved. </span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loader">
+        <div class="loader-inner line-spin-fade-loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(".loader").delay(400).fadeOut("slow");
+        new WOW().init();
+    </script>
+</body>
+
+</html>
